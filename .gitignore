@@ -1,0 +1,11 @@
+node_modules
+
+# build
+www/dist
+
+# sys
+.DS_Store
+Thumbs.db
+
+# log
+*.log
