@@ -1,7 +1,7 @@
 {
-	"name": "noise",
+	"name": "sound-but-pretty",
 	"version": "0.1.0",
-	"description": "Playing around with JS audio",
+	"description": "Show audio frequency display",
 	"main": "index.js",
 	"license": "MIT",
 	"private": true,

@@ -42,14 +42,14 @@ const getAudioSourceFromMicrophone = async () => {
 };
 
 const displayFrequencies = (source: AudioNode, renderId: string, playbackEnabled: boolean) => {
-	const appRoot = document.getElementById(renderId);
-	if (!appRoot) {
+	const renderRoot = document.getElementById(renderId);
+	if (!renderRoot) {
 		console.error(`No element with id ${renderId}`);
 		return;
 	}
 
 	const processor = new AudioProcessor(source, NB_BINS, playbackEnabled);
-	const renderer = new AudioRenderer(processor, appRoot);
+	const renderer = new AudioRenderer(processor, renderRoot);
 	renderer.startRender();
 };
 
