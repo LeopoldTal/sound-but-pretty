@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Noise</title>
-		<link rel="stylesheet" href="index.css">
-	</head>
-	<body>
-		<h1>Check out this sweet frequency graph</h1>
-		<noscript>Enable Javascript to use.</noscript>
-		<div id="app-root"></div>
-		<script src="dist/app.js"></script>
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>Noise</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<h1>Check out this sweet frequency graph</h1>
+	<noscript>Enable Javascript to use.</noscript>
+	<table>
+		<thead>
+			<tr>
+				<th>Sound from URL</th>
+				<th>Microphone</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="url-root"></td>
+				<td id="mic-root"></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="dist/app.js"></script>
+</body>
+
 </html>

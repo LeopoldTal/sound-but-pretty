@@ -47,7 +47,7 @@ export class AudioRenderer {
 				left: `${ii * barWidth}%`,
 				width: `${barWidth}%`,
 				height: '50%',
-				backgroundColor: `hsl(${360 * ii / nbBins}, 100%, 50%)`
+				backgroundColor: `hsl(${360 * ii / nbBins}, 100%, 40%)`
 			});
 			barsContainer.appendChild(bar);
 			this.bars.push(bar);

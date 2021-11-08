@@ -1,7 +1,22 @@
+body {
+	margin: 0;
+	padding: 1vh 1vw;
+}
+
+tr {
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+}
+
 .bars-container {
 	position: relative;
-	width: 80vw;
-	height: 80vh;
+	width: 48vw;
+	height: 70vh;
 	border: 1px solid black;
 }
 
