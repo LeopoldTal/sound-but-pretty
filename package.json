@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"start": "esbuild ./src/ --bundle --sourcemap --outfile=www/dist/app.js --servedir=www"
+		"start": "esbuild ./src/ --bundle --sourcemap --outfile=www/dist/app.js --servedir=www & open http://localhost:8000/"
 	},
 	"dependencies": {
 		"esbuild": "^0.13.12"
