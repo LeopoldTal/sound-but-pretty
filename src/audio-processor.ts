@@ -25,6 +25,15 @@ export class AudioProcessor {
 		this.source.connect(this.analyser);
 	}
 
+	setSource(source: AudioNode) {
+		if (source.context !== this.source.context) {
+			throw new Error('cannot replace source with different context');
+		}
+		this.source.disconnect();
+		this.source = source;
+		this.source.connect(this.analyser);
+	}
+
 	getMaxFreq(): number { return this.source.context.sampleRate / 2; }
 	getNbBins(): number { return this.analyser.frequencyBinCount; }
 

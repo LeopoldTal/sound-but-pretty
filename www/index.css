@@ -3,6 +3,21 @@ body {
 	padding: 1vh 1vw;
 }
 
+h1 {
+	float: left;
+}
+
+#devices {
+	border: 1px solid grey;
+	float: right;
+	padding: 1rem;
+	margin: 1rem 1rem 0 0;
+}
+
+table {
+	clear: both;
+}
+
 tr {
 	margin: 0;
 	padding: 0;
